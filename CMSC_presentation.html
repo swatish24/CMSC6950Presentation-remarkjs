@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Presentation</title>
+	<meta charset="utf-8">
+	<style>
+	  @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif';}
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+        color: steelblue;
+        text-align: center;
+      }
+      .background {background-color: black;
+                    color: white;}
+      .points {text-align: center;}
+      .row {
+	  display: flex;
+	  flex-wrap: wrap;
+	  padding: 0 4px;
+	}
+
+	/* Create two equal columns that sits next to each other */
+	.column {
+	  flex: 50%;
+	  padding: 0 4px;
+	}
+
+	.column img {
+	  margin-top: 8px;
+	  vertical-align: middle;
+	}
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+	</style>
+</head>
+<body>
+	<textarea id="source">
+		class: center, middle,background
+		#CMSC 6950 Presentation
+
+		---
+		class: points, middle
+		#Contents
+
+
+		<li>Our Data</li>
+		<li>Plot showing the number of total cases</li>
+		<li>Plot showing the number of individuals tested</li>
+		<li>Plot showing the number of cases per day</li>
+		<li>Plots showing the data of doubling rate</li>
+		<li>Free Choice Task</li>
+
+		---
+		class: center, middle
+		#Our Data
+
+		We have taken the data from the Canada.ca Coronavirus disease(COVID-19) page. where we have mostly used the data from columns like numconf which tells the number of confirmed cases in Canada's Province and Territories, numtested which tells about the individuals tested, numtoday contains data about the new cases in province on daily basis, prname which contain names of provinces and territories.
+		
+		---
+
+		class: center
+		#Plot showing the number of total cases
+
+		<img src="/Users/swati/Desktop/CMSC/CMSC_project/Total_Cases.png" height="350" width="500">
+
+		This plot shows the total confirmed cases in each province and territories of Canada in which the heighest number of cases were in Quebec.
+
+		---
+
+		class: center
+		#Plot showing the number of individuals tested
+
+		<img src="/Users/swati/Desktop/CMSC/CMSC_project/individual_tested.png" height="350" width="500">
+
+		This plot shows the total number of individuals tested in each province and territories of Canada in which the heighest number tests were in Ontario.
+
+		---
+
+		class: center
+		#Plot showing the number of cases per day
+
+		<img src="/Users/swati/Desktop/CMSC/CMSC_project/daily_case.png" height="350" width="500">
+
+		This plot shows the number of cases per day in each province and territories of Canada in which Quebec had the highest number of cases per day.
+
+		---
+
+		class: center
+		#Plots showing the data of doubling rate
+
+		<img src="/Users/swati/Desktop/CMSC/CMSC_project/AlberDoub.png" height="350" width="500">
+
+		This plot shows the doubling rate for total cases, total tested, new cases, and total death in Alberta.
+
+		---
+
+		class: center, middle
+		
+
+		<img src="/Users/swati/Desktop/CMSC/CMSC_project/BritiDoub.png" height="350" width="500">
+
+		This plot shows the doubling rate for total cases, total tested, new cases, and total death in British Columbia.
+
+		---
+
+		class: center, middle
+		<!-- #Plots showing the data of doubling rate -->
+
+		<img src="/Users/swati/Desktop/CMSC/CMSC_project/NewbrDoub.png" height="350" width="500">
+
+		This plot shows the doubling rate for total cases, total tested, new cases, and total death in Newbrunswick.
+
+		---
+
+		class: center, middle
+		<!-- #Plots showing the data of doubling rate -->
+
+		<img src="/Users/swati/Desktop/CMSC/CMSC_project/NewfouDoub.png" height="350" width="500">
+
+		This plot shows the doubling rate for total cases, total tested, new cases, and total death in Newfoundland.
+		
+
+		---
+
+
+		class: center, middle, background
+		#Free Choice Task
+
+		In this task we have plotted animated graphs for the total case confirmed in each province, which shows the growth of confirmed cases over time for a single province asked for.
+		
+		---
+
+		class: center
+
+		#Animated Plot for a single Province
+		
+		<video height="350" width="500" controls>
+			<source src="/Users/swati/Desktop/CMSC/CMSC_project/Alberta.mov" type="video/mp4">
+		</video>
+
+		This video shows the growth of the confirmed cases from 31-01-2020 till the updated date for Alberta.
+
+		---
+
+		class: center
+
+		#Demo - how it works
+		
+		<video height="450" width="800" controls>
+			<source src="/Users/swati/Desktop/CMSC/CMSC_project/my_Demo.mov" type="video/mp4">
+		</video>
+
+
+		---
+
+		class: row, column, img
+
+		Examples for some other provinces:
+
+		<img src="/Users/swati/Desktop/CMSC/CMSC_project/Ontario.png" height="250" width="400">
+		<img src="/Users/swati/Desktop/CMSC/CMSC_project/Quebec.png" height="250" width="400">
+		<img src="/Users/swati/Desktop/CMSC/CMSC_project/NL.png" height="250" width="400">
+		<img src="/Users/swati/Desktop/CMSC/CMSC_project/Saskatchewan.png" height="250" width="400">
+
+		---
+		class: center, middle
+
+		#Thank You
+
+		
+
+
+	</textarea>
+	<script src="https://remarkjs.com/downloads/remark-latest.min.js" ></script>
+	<script>
+		var slidshow = remark.create()
+	</script>
+</body>
+</html>
